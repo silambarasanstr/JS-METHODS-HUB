@@ -11,12 +11,10 @@ const Display = ({ text }) => <h2>{text}</h2>;
 const LoggedComponent = WithLogger(Display);
 
 const HOFContainer = () => {
-    const data =  UseLogger("HooksContainer");
+  UseLogger("HooksContainer");
   return (
     <div>
       <LoggedComponent text="Logger Example" />
-      {data}
-      
     </div>
   );
 };

@@ -11,6 +11,7 @@ import RecursionContainer from "../containers/RecursionContainer";
 import SidebarContainer from "../containers/SidebarContainer";
 import CallbackContainer from "../containers/CallbackContainer";
 import HOFContainer from "../containers/HOFContainer";
+import CurryingContainer from '../containers/CurryingContainer'
 
 const AppRoutes = () => {
   return (
@@ -25,6 +26,7 @@ const AppRoutes = () => {
           <Route path="sidebar" element={<SidebarContainer />} />
           <Route path="callback" element={<CallbackContainer />} />
           <Route path="hoc" element={<HOFContainer />} />
+          <Route path="currying" element={<CurryingContainer />} />
 
           <Route path="strings">
             <Route path="palindrome" element={<Palindrome />} />

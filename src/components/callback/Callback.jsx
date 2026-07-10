@@ -34,7 +34,7 @@ for (let i = 0; i < arr2.length; i++) {
 console.log(result2);
 
 const Callback = () => {
-  return <div>Callback is</div>;
+  return <div className="p-4 text-blue-800 bg-blue-100">Iam Callback</div>;
 };
 
 export default Callback;

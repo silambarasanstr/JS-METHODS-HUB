@@ -206,6 +206,18 @@ const SideBar = ({ collapsed, setCollapsed }) => {
           {renderIcon(Home)}
           {!collapsed && <span className="text-xs font-medium">HOC</span>}
         </Link>
+
+        <Link
+          to="/currying"
+          className={`flex items-center gap-3 px-3 py-3 text-sm rounded-lg hover:bg-gray-100 ${
+            location.pathname === "/"
+              ? "text-blue-600 bg-blue-50"
+              : "text-gray-600"
+          }`}
+        >
+          {renderIcon(Home)}
+          {!collapsed && <span className="text-xs font-medium">Currying</span>}
+        </Link>
       </nav>
     </div>
   );
